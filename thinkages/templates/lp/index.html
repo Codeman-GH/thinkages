@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+
+
+
+{% block header%}
+<div class="row">
+		<section class="col-sm-12 col-md-12 col-lg-12 h1 text-center img-fluid" style="height:270px; background: url('/static/images/happyman.jpg'); background-size: cover;">
+		
+		</section>
+		
+		<section class="col-sm-12 col-md-12 col-lg-12 text-warning h1"> <h1 class="text-center display-1" style="font-family: 'Londrina Solid', cursive; font-weight:w900" > Welcome To Think-Ages </h1> </section>
+</div>
+
+{% endblock header %}
+	
+{% block content %}
+	<section class="jumbotron col-xs-12 col-sm-12 col-md-12  col-lg-12" >
+		<h1 class="text-center" style="font-family: 'Londrina Solid', cursive; font-weight:w900"> OBJECTIVE </h1>
+		
+		<p class="text-center h2">
+		Our ONLY objective is to help the owners of small businesses
+		keep the MAXIMUM amount possible from
+		the Small Business administration (SBA)  
+		Payment Protection Program (PPP) Loan. 
+		</p>
+	</section>
+	
+	
+	<section class="jumbotron col-xs-12 col-sm-12 col-md-12  col-lg-12" style="">
+		<h1 class="text-center" style="font-family: 'Londrina Solid', cursive; font-weight:w900"> VISION </h1>
+		
+		<p class="text-center h2">
+		Be confident that the complex PPP forgiveness calculations
+		have been done correctly, with the right methods.
+		Customized to your needs, our consulting services help
+		support your application and maximize your forgiveness amount. 
+		</p>
+	</section>
+
+	<section class="jumbotron col-xs-12 col-sm-12 col-md-12  col-lg-12 " style="">
+		<h1 class="text-center" style="font-family: 'Londrina Solid', cursive; font-weight:w900"> DETERMINATIONS </h1>
+		
+			
+			<h4 class="text-center h2">• Full-time equivalent employees (FTEs)</h4>
+			<h4 class="text-center h2">• Safe Harbor</h4>
+			<h4 class="text-center h2">• PPP Schedule A Worksheet</h4>
+			<h4 class="text-center h2">• Employee Cash Compensation</h4>
+			<h4 class="text-center h2">• Owner Cash Compensation</h4>
+			<h4 class="text-center h2">• Eligible Payroll Costs </h4>
+			<h4 class="text-center h2">• Non-payroll costs </h4>
+			<h4 class="text-center h2">• Salary and Wage computations</h4>
+			<h4 class="text-center h2">• Average Hours</h4>
+		
+		
+	</section>
+	
+	<section class="jumbotron col-xs-12 col-sm-12 col-md-12  col-lg-12" style="">
+		<h1 class="text-center" style="font-family: 'Londrina Solid', cursive; font-weight:w900"> PERIOD </h1>
+		<h3 class="text-center h2">8-WEEK or 24-WEEK (COVERED or ALT-COVERED)</h3>
+		
+	</section>	
+	<section class="jumbotron col-xs-12 col-sm-12 col-md-12  col-lg-12" style="">
+		<h1 class="text-center" style="font-family: 'Londrina Solid', cursive; font-weight:w900"> FEE  </h1>
+		<h3 class="text-center h2">0.5% (zero point five %) of forgiveness amount</h3>
+		
+	</section>	
+	
+
+	
+	
+	<section class="col-xs-12 col-sm-12 col-md-12  col-lg-12">
+	  
+<!-- Modal -->
+<form method="POST" class="post-form" action="/" enctype="multipart/form-data" class="form-control "style="font-family: 'Londrina Solid', cursive; font-weight:w900" >{% csrf_token %}
+<div class="modal fade" id="leaveReplyModal" tabindex="-1" role="dialog" aria-labelledby="leaveReplyModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+	
+      <div class="modal-header">
+        <h5 class="modal-title h1" id="exampleModalLabel" >Leave A Reply </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body ">
+       
+		{{ leave_a_reply.name }}
+		<br/>
+		{{ leave_a_reply.email }}
+		<br/>
+		{{ leave_a_reply.comment }}
+
+      </div>
+      <div class="modal-footer">
+	<button type="submit", name="btnAddReply", class="save btn btn-dark btn-lg align-right"> Post Comment </button>
+      </div>
+	
+    </div>
+
+  </div>
+</div>
+</form>		
+		
+
+
+	</section>	
+
+{% endblock %}
+
+
+
+{% block footer %}
+		<!-- Footer -->
+<footer class="page-footer font-small grey darken-3 mt-4" style="background:url('/static/images/header.jpg'); background-size: cover;">
+
+  <!-- Footer Links -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center">
+		<button type="button" class="btn btn-lg btn-lg fa fa-commenting-o btn-outline-warning  grey brighten-3" data-toggle="modal" data-target="#leaveReplyModal">
+			Leave A Reply
+		</button>
+			<!--<img class="img-responsive mx-1" height="100px", width="100px" src="/static/{{STATIC_URL}}images/header.jpg" alt="Prempeh college">
+			<img class="img-responsive"height="100px", width="100px" src="/static/{{STATIC_URL}}images/achimotaschool.jpg" alt="Achimota School">
+			-->
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 CDM7 Studios || Codeman GH ™ 
+    
+  </div>
+  <!-- Copyright -->
+  
+  
+
+  
+  
+
+</footer>
+<!-- Footer -->
+	
+{% endblock footer %}
+
+
+
+
+
+
+
+
+
+

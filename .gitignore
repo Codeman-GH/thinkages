@@ -1,0 +1,6 @@
+.pyc,
+.db,
+.wpr,
+.wpy,
+.log,
+local_settings.py
