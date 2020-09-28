@@ -3,121 +3,530 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Think-Ages</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compactible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
-	<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@400;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-	<link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
-	<link rel="stylesheet" href="{% static 'css/lightbox.css' %}">
-	<link rel="stylesheet" href="{% static 'css/style.css' %}">
-	
 
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Frimpon-Analytiqa</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+ 
+  <link href="{% static 'assets/img/favicon.png'%}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+ 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+  <link href= "{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+
+
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
 
 </head>
-<body  >
 
-{% block header %}
-   
-		
-{% endblock header %}
+<body>
 
-
-
-
-	<div class="container">
-	<div class="row">
-
-		
-			{% block content %}
-				
-			
-
-
-			{% endblock content %}	
-		
-	
-
-
-	</div>
-	</div>
-	
-
-
-	{% block footer %}
-		<!-- Footer -->
-<footer class="page-footer font-small grey darken-3 mt-4" style="background:url('/static/images/header.jpg'); background-size: cover;">
-
-  <!-- Footer Links -->
-  <div class="container">
-
-    <!-- Grid row-->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-md-12 py-5">
-        <div class="mb-5 flex-center">
-			<!--<img class="img-responsive mx-1" height="100px", width="100px" src="/static/{{STATIC_URL}}images/header.jpg" alt="Prempeh college">
-			<img class="img-responsive"height="100px", width="100px" src="/static/{{STATIC_URL}}images/achimotaschool.jpg" alt="Achimota School">
-			-->
-        </div>
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+    <div class="container d-flex">
+      <div class="contact-info mr-auto">
+        <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">ghcodeman@gmail.com</a>
+        <i class="icofont-phone"></i> +233 245 222 490
       </div>
-      <!-- Grid column -->
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="skype"><i class="icofont-skype"></i></a>
+        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="{% url 'index' %}">Frimpon-Analytiqa<span>.</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#hero">Home</a></li>
+          <li><a href="#featured-services">Mission</a></li>
+          <li><a href="#about">About Us</a></li>
+		  <li><a href="#testimonials">Testimonials</a></li>
+		  <li><a href="#contact">Contact Us</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
 
     </div>
-    <!-- Grid row-->
+  </header><!-- End Header -->
 
-  </div>
-  <!-- Footer Links -->
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <h1>Welcome to <span>Frimpon-Analytiqa/Fanalytica</spa>
+      </h1>
+      <h2>Your personal Mathematician</h2>
+      <div class="d-flex">
+        <a href="#contact" class="btn-get-started scrollto">Get Started</a> 
+      </div>
+    </div>
+  </section><!-- End Hero -->
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 CDM7 Studios || Codeman GH ™ 
-    
-  </div>
-  <!-- Copyright -->
+  <main id="main">
 
-</footer>
-<!-- Footer -->
-	
-	{% endblock footer %}
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+	  
+
+		<div class="row">
+          <div class="col-md-10 col-lg-10 d-flex align-items-stretch mb-2 mb-lg-2">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class='bx bxs-message-rounded-check'></i></div>
+              <h4 class="title"><a href="#">MISSION</a></h4>
+              <p class="description">
+			  Our ultimate aim is to help small and perhaps struggling businesse survive and even thrive in this once-in-a lifetime 
+			  pandemic environment. The federal and state governments have given substantial amounts of money and resources to prop 
+			  up businesses to survive this one-in a lifetime pandemic. Many businesses would have gone under but for this intervention.
+			 However, the capital infusion money is not free. Due diligence is being done to ensure that taxpayer money is not squandered
+			 by quack businesses or businesses with quack business practices. Case in point is the Florida business owner who purchased a
+			 Lamborghini with his SBA PPP loan. However, just like filing of taxes, a business must prove to the IRS that it is entitled to
+			 a quantum of refund or a minimization of its tax liability.
+			FANALYTIQA aspires to help small businesses legitimately maximize their forgiven amounts.
+			The ridiculously low fee of 0.5% (zero-point five percent) is meant to put your mind at ease, as well as leave your pocketbook unaffected. 
+			This oversight fee for a ‘second opinion’ is a smart step in ensuring that your business gets the maximum possible forgiveness amount. 
+			  </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class='bx bx-check-double'></i></div>
+              <h4 class="title"><a href="#">OBJECTIVE</a></h4>
+              <p class="description">
+			  Currently, our objective is to help the owners of small businesses keep the MAXIMUM amount possible from the Small Business administration
+			  (SBA) Payment Protection Program (PPP) Loan.
+			  </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">ANALYTICS</a></h4>
+              <p class="description">
+				Be confident that the complex PPP forgiveness calculations have been done correctly, with the right methods. 
+				Customized to your needs, our consulting services help support your application and maximize your forgiveness amount.
+			  </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="#">DETERMINATIONS</a></h4>
+              <p class="description">
+				• Full-time equivalent employees (FTEs)<br/>
+				• Safe Harbor<br/>
+				• PPP Schedule A Worksheet<br/>
+				• Employee Cash Compensation<br/>
+				• Owner Cash Compensation<br/>
+				• Eligible Payroll Costs<br/>
+				• Non-payroll costs<br/>
+				• Salary and Wage computations<br/>
+				• Average Hours<br/>
+			  </p>
+            </div>
+          </div>
 
 
-	<script>
-	
-	</script>
 
-	
-	
-	<script src="{% static 'js/jquery-3.2.1.min.js' %}" ></script>
-	<script>
-$(document).click(function (event) {
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class='bx bxs-hourglass'></i></div>
+              <h4 class="title"><a href="#">PERIOD</a></h4>
+              <p class="description">
+			  8-WEEK or 24-WEEK (COVERED or ALT-COVERED)
 
-  /// If *navbar-collapse* is not among targets of event
-  if (!$(event.target).is('.navbar-collapse *')) {
-
-    /// Collapse every *navbar-collapse*
-    $('.navbar-collapse').collapse('hide');
-
-  }
-});
-
-</script>
-
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-	<script src="{% static 'js/popper.min.js' %}" ></script>
-	<script src="{% static 'js/lightbox.js' %}" ></script>
-	<script src="{% static 'js/jquery.raty.js' %}" ></script>
-
-	
+			  </p>
+            </div>
+          </div>
 		
 
-	
-	
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class='bx bx-money'></i></div>
+              <h4 class="title"><a href="#">FEE</a></h4>
+              <p class="description">
+			  0.5% (zero point five %) of forgiveness amount.
+			  </p>
+            </div>
+          </div>
+		
+		
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bx bxs-file"></i></div>
+              <h4 class="title"><a href="#">ACCEPTED DATA TYPES</a></h4>
+              <p class="description">
+			  Raw data is ok, so far as it is in the format of INTUIT and other professional payroll data types.
+			  </p>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class='bx bx-file'></i></div>
+              <h4 class="title"><a href="#">IDEAL DATA TYPES</a></h4>
+              <p class="description">
+			  EXCEL, GOOGLE SHEET
+			  </p>
+            </div>
+          </div>
+
+		
+		
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class='bx bxs-hourglass'></i></div>
+              <h4 class="title"><a href="#">DURATION OF WORK</a></h4>
+              <p class="description">
+			  With the correct file types uploaded, 3-DAYS MAX.
+			  </p>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class='bx bx-money'></i></div>
+              <h4 class="title"><a href="#">PAYMENT</a></h4>
+              <p class="description">
+			  HALF of the (0.5% FEE) before commencement and the remaining after the final decision of lender. That’s right, if
+			  we do not give you the maximum possible as indicated in our analysis, we forfeit the remaining half. In effect,
+			  you pay us 0.025%.
+			  </p>
+            </div>
+          </div> 
+		  
+	</div>
+    </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <h3>Cheif Analyst <span>Micheal Frimpon</span></h3>
+          <p>A little brief of yourself over here.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="100">
+            <img src="/static/{{ STATIC_URL}}assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <h3>Background(Previous Engagements)</h3>
+            <p class="font-italic">
+              A small brief(optional)
+            </p>
+            <ul>
+              <li>
+                <i class="bx bx-store-alt"></i>
+                <div>
+                  <h5>Statistics lecturer in Virginia Commonwealth University (VCU)</h5>
+                  <p>Little brief here(optional)</p>
+                </div>
+              </li>
+              <li>
+                <i class="bx bx-images"></i>
+                <div>
+                  <h5>Virginia State University (VSU)</h5>
+                  <p>Little brief here(optional)</p>
+                </div>
+              </li>
+              <li>
+                <i class="bx bx-images"></i>
+                <div>
+                  <h5>University of Phoenix Online </h5>
+                  <p>Little brief here(optional)</p>
+                </div>
+              </li>
+              <li>
+                <i class="bx bx-images"></i>
+                <div>
+                  <h5>GIMPA </h5>
+                  <p>Little brief here(optional)</p>
+                </div>
+              </li>
+              <li>
+                <i class="bx bx-images"></i>
+                <div>
+                  <h5>Senior Analyst at Circuit City. </h5>
+                  <p>Little brief here(optional)</p>
+                </div>
+              </li>
+            </ul>
+            <p>
+              You can have an overall summary over here.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">ANALYSIS <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">INFERENTIAL STATISTICS  <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">POPULATION SCHEMATICS <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">MACHINE LEARNING <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">COGNITIVE PSYCOLOGY <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">STORYTELLING <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="icofont-simple-smile"></i>
+              <span data-toggle="counter-up">232</span>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="icofont-document-folder"></i>
+              <span data-toggle="counter-up">521</span>
+              <p>Projects</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="icofont-live-support"></i>
+              <span data-toggle="counter-up">1,463</span>
+              <p>Hours Of Support</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="icofont-users-alt-5"></i>
+              <span data-toggle="counter-up">15</span>
+              <p>Hard Workers</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+ 
+  
+ 
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item">
+            <img src="/static/{{STATIC_URL}}assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+            <h3>Codeman Kwaku Junior</h3>
+            <h4>Web developer </h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              This session is meant for testimonials of people you've worked with. e.g I really enjoyed working with fanalytica
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="/static/{{STATIC_URL}}assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+            <h3>Edward Jassie</h3>
+            <h4>Designer</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i> 
+				Fanlytica is the best ever in the game
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+        
+         
+
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <h3><span>Contact Us</span></h3>
+          <p>A little description over here</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>PMB 100, Tesano, Accra</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>ghcodeman@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>+233 245 222 490</p>
+            </div>
+          </div>
+
+			
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+
+    <div class="footer-top ">
+		  <div class="container">
+			<div class="row">
+
+			  <div class="col-lg-3 col-md-6 footer-contact offset-md-3 offset-lg-3">
+				<h3>Frimpon-Analytiqa<span>.</span></h3>
+			  </div>
+			</div>
+			<div class="container py-4  offset-md-3 offset-lg-3">
+				<div class="copyright">
+				&copy; Copyright <strong><span>Codeman GH</span></strong>. All Rights Reserved
+				</div>
+			</div>
+			
+		</div>
+    </div>
+
+
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  
+  <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+
+  
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
 </body>
+
 </html>
