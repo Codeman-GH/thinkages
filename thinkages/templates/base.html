@@ -59,8 +59,8 @@
     <div class="container d-flex align-items-center">
 
       <h1 class="logo mr-auto"><a href="{% url 'index' %}">Frimpon-Analytiqa<span>.</span></a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <!--<a href="{% url 'index' %}" class="logo mr-auto"><img src="/static{{STATIC_URL}}/assets/img/apple-touch-icon.png" alt=""></a>  -->
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
@@ -79,9 +79,11 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
+	<br/><br/><br/>
       <h1>Welcome to <span>Frimpon-Analytiqa/Fanalytica</spa>
       </h1>
       <h2>Your personal Mathematician</h2>
+	  <img src="/static/{{STATIC_URL}}assets/img/initial.png" alt="initial" class="img-fluid"  width="350" height="350"/>
       <div class="d-flex">
         <a href="#contact" class="btn-get-started scrollto">Get Started</a> 
       </div>
@@ -239,14 +241,13 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>About</h2>
           <h3>Cheif Analyst <span>Micheal Frimpon</span></h3>
           <p>A little brief of yourself over here.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="100">
-            <img src="/static/{{ STATIC_URL}}assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="/static/{{ STATIC_URL}}assets/img/whoami.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <h3>Background(Previous Engagements)</h3>
@@ -255,35 +256,35 @@
             </p>
             <ul>
               <li>
-                <i class="bx bx-store-alt"></i>
+               <i class='bx bx-stats' ></i>
                 <div>
                   <h5>Statistics lecturer in Virginia Commonwealth University (VCU)</h5>
                   <p>Little brief here(optional)</p>
                 </div>
               </li>
               <li>
-                <i class="bx bx-images"></i>
+				<i class='bx bxs-book-reader' ></i>
                 <div>
                   <h5>Virginia State University (VSU)</h5>
                   <p>Little brief here(optional)</p>
                 </div>
               </li>
               <li>
-                <i class="bx bx-images"></i>
+				<i class='bx bxs-school' ></i>
                 <div>
                   <h5>University of Phoenix Online </h5>
                   <p>Little brief here(optional)</p>
                 </div>
               </li>
               <li>
-                <i class="bx bx-images"></i>
+               <i class='bx bx-book-reader' ></i>
                 <div>
                   <h5>GIMPA </h5>
                   <p>Little brief here(optional)</p>
                 </div>
               </li>
               <li>
-                <i class="bx bx-images"></i>
+                <i class='bx bxs-coin-stack' ></i>
                 <div>
                   <h5>Senior Analyst at Circuit City. </h5>
                   <p>Little brief here(optional)</p>
@@ -291,7 +292,7 @@
               </li>
             </ul>
             <p>
-              You can have an overall summary over here.
+              You can have an overall summary over here......
             </p>
           </div>
         </div>
@@ -408,13 +409,16 @@
  
 
     <!-- ======= Testimonials Section ======= -->
+	<h2 class="section-title">  Testimonials </h2>
     <section id="testimonials" class="testimonials">
+	
+	
       <div class="container" data-aos="zoom-in">
 
         <div class="owl-carousel testimonials-carousel">
 
           <div class="testimonial-item">
-            <img src="/static/{{STATIC_URL}}assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+            <img src="/static/{{STATIC_URL}}assets/img/testimonials/tes-1.jpg" class="testimonial-img" alt="">
             <h3>Codeman Kwaku Junior</h3>
             <h4>Web developer </h4>
             <p>
@@ -425,7 +429,7 @@
           </div>
 
           <div class="testimonial-item">
-            <img src="/static/{{STATIC_URL}}assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+            <img src="/static/{{STATIC_URL}}assets/img/testimonials/tes-2.jpg" class="testimonial-img" alt="">
             <h3>Edward Jassie</h3>
             <h4>Designer</h4>
             <p>
